@@ -12,20 +12,20 @@
     ^-  json
     =,  enjs:format
     ?-  -.letter
-        %text
+      %text
     (frond %text s+text.letter)
     ::
-        %url
+      %url
     (frond %url s+url.letter)
     ::
-        %code
+      %code
     %+  frond  %code
     %-  pairs
     :~  [%expression s+expression.letter]
         [%output a+(turn output.letter tank)]
     ==
     ::
-        %me
+      %me
     (frond %me s+narrative.letter)
     ::
     ==
