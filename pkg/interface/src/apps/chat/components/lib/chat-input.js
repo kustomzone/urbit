@@ -6,6 +6,8 @@ import { UnControlled as CodeEditor } from 'react-codemirror2';
 import 'codemirror/mode/markdown/markdown';
 import 'codemirror/addon/display/placeholder';
 
+import 'codemirror/lib/codemirror.css';
+
 import { Sigil } from '../../../../lib/sigil';
 import { ShipSearch } from './ship-search';
 
@@ -340,7 +342,7 @@ export class ChatInput extends Component {
           <CodeEditor
             options={options}
             editorDidMount={(editor) => {
-            this.editor = editor;
+              this.editor = editor;
             }}
             onChange={(e, d, v) => this.messageChange(e, d, v)}
           />
